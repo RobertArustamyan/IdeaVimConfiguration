@@ -1,4 +1,4 @@
-# Vim Configuration# IdeaVim Settings
+# IdeaVim Settings
 
 This repository contains my personal Vim configuration settings tailored for use with the IdeaVim plugin in JetBrains PyCharm. IdeaVim is a Vim emulation plugin that brings Vim keybindings and functionality such as copy and paste from clipboard to the PyCharm IDE, enhancing productivity and workflow.
 
