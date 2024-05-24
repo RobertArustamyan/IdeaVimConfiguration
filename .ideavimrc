@@ -1,21 +1,37 @@
+" Set the number of lines to keep above and below the cursor
 set scrolloff=5
+
+" Enable incremental search
 set incsearch
 
+" Map Q to reformat text with gq
 map Q gq
 
+" Plugin configurations
 Plug 'machakann/vim-highlightedyank'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 
+" Clipboard mappings
+" Yank (copy) to system clipboard in visual, normal, and insert modes
 vnoremap <C-c> "+y
 nnoremap <C-c> "+y
 inoremap <C-c> <Esc>"+y
 
+" Paste from system clipboard in visual, normal, and insert modes
 vnoremap <C-v> "+p
 nnoremap <C-v> "+p
 inoremap <C-v> <C-o>"+p
 
+" Indentation mappings
+" Map Tab to increase indent in normal mode
 nnoremap <Tab> >>
+
+" Map Shift+Tab to decrease indent in normal mode
 nnoremap <S-Tab> <<
+
+" Map Tab to increase indent in visual mode
 vnoremap <Tab> >gv
+
+" Map Shift+Tab to decrease indent in visual mode
 vnoremap <S-Tab> <gv
