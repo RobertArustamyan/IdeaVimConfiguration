@@ -18,10 +18,12 @@ vnoremap <C-c> "+y
 nnoremap <C-c> "+y
 inoremap <C-c> <Esc>"+y
 
-" Paste from system clipboard in visual, normal, and insert modes
-vnoremap <C-v> "+p
+" Paste from system clipboard in visual and normal modes
 nnoremap <C-v> "+p
-inoremap <C-v> <C-o>"+p
+vnoremap <C-v> "+p
+
+" Paste from system clipboard in insert mode
+inoremap <C-v> <C-r>+
 
 " Indentation mappings
 " Map Tab to increase indent in normal mode
